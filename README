@@ -1,4 +1,14 @@
-        Linux kernel release 4.x <http://kernel.org/>
+Current status - fixed compilation error with Werror=missing-braces
+
+Compilation still fails on drivers linking with message:
+drivers/built-in.o:mtk_spm_fs.c:function sodi_ctrl_show: error: undefined reference to '__spm_sodi'
+drivers/built-in.o:mtk_spm_fs.c:function sodi_ctrl_show: error: undefined reference to '__spm_sodi'
+drivers/built-in.o:mtk_spm_fs.c:function sodi3_ctrl_show: error: undefined reference to '__spm_sodi3'
+drivers/built-in.o:mtk_spm_fs.c:function sodi3_ctrl_show: error: undefined reference to '__spm_sodi3'
+drivers/built-in.o:mtk_spm_fs.c:function dpidle_ctrl_show: error: undefined reference to '__spm_dpidle'
+drivers/built-in.o:mtk_spm_fs.c:function dpidle_ctrl_show: error: undefined reference to '__spm_dpidle'
+
+                Linux kernel release 4.x <http://kernel.org/>
 
 These are the release notes for Linux version 4.  Read them carefully,
 as they tell you what this is all about, explain how to install the

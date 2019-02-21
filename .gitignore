@@ -1,1 +1,9 @@
 out/
+
+repack_boot/boot_new\.img
+
+repack_boot/bootimg\.cfg
+
+repack_boot/initrd\.img
+
+repack_boot/zImage-dtb
